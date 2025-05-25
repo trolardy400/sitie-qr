@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Generador de Código QR</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <h1>🌿 Generador de Código QR</h1>
+
+  <div class="contenedor">
+    <div class="input-seccion">
+      <input type="text" id="texto" placeholder="🔗 Escribe aquí un enlace o texto">
+      <input type="file" id="imagen" accept="image/*">
+      <button onclick="generarQR()">Generar QR</button>
+    </div>
+
+    <div class="qr-seccion">
+      <p>Resultado:</p>
+      <div id="qrcode"></div>
+      <button id="descargar" style="display: none;">Descargar QR</button>
+    </div>
+  </div>
+
+  <script src="qr-code-styling.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
